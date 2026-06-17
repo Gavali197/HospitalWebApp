@@ -103,7 +103,9 @@ namespace HospitalManagement.Controllers
 
             // 6. Calculate Lab Charges
             decimal totalLabCharges = recordsDuringStay?
-                .SelectMany(r => r.LabTests).Sum(l => l.Cost) ?? 0;
+                .SelectMany(r => r.LabTests)
+                .Where(l => l.Status == LabTestStatus.Completed)
+                .Sum(l => l.Cost) ?? 0;
 
             // 7. Calculate Medicine Charges (Assuming Quantity needed = DurationDays)
             decimal totalMedicineCharges = recordsDuringStay?
@@ -193,7 +195,7 @@ namespace HospitalManagement.Controllers
             return View(bill);
         }
 
-        // POST: Bills/Edit/5
+        // Update your [HttpPost] Edit method in BillsController.cs
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Bill bill)
@@ -204,20 +206,26 @@ namespace HospitalManagement.Controllers
             {
                 try
                 {
-                    var existingBill = await _context.Bills.AsNoTracking().FirstOrDefaultAsync(b => b.BillId == id);
+                    // 1. Remove AsNoTracking() so EF Core tracks changes
+                    var existingBill = await _context.Bills.FirstOrDefaultAsync(b => b.BillId == id);
                     if (existingBill == null) return NotFound();
 
-                    // Security: Re-calculate the total to prevent HTML manipulation hacks
-                    bill.TotalAmount = (existingBill.DoctorFee + existingBill.RoomCharges + existingBill.LabCharges + existingBill.MedicineCharges) - bill.Discount;
+                    // 2. Only update the specific fields we allowed the receptionist to change
+                    existingBill.Discount = bill.Discount;
+                    existingBill.PaidAmount = bill.PaidAmount;
+                    existingBill.PaymentMode = bill.PaymentMode;
 
-                    if (bill.PaidAmount >= bill.TotalAmount)
-                        bill.PaymentStatus = PaymentStatus.Paid;
-                    else if (bill.PaidAmount > 0)
-                        bill.PaymentStatus = PaymentStatus.Partial;
+                    // 3. Recalculate totals securely on the backend
+                    existingBill.TotalAmount = (existingBill.DoctorFee + existingBill.RoomCharges + existingBill.LabCharges + existingBill.MedicineCharges) - existingBill.Discount;
+
+                    if (existingBill.PaidAmount >= existingBill.TotalAmount)
+                        existingBill.PaymentStatus = PaymentStatus.Paid;
+                    else if (existingBill.PaidAmount > 0)
+                        existingBill.PaymentStatus = PaymentStatus.Partial;
                     else
-                        bill.PaymentStatus = PaymentStatus.Unpaid;
+                        existingBill.PaymentStatus = PaymentStatus.Unpaid;
 
-                    _context.Update(bill);
+                    // 4. Save changes directly (EF Core automatically knows what changed)
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -230,8 +238,8 @@ namespace HospitalManagement.Controllers
             return View(bill);
         }
 
-        // GET: Bills/Delete/5
-        [Authorize(Roles = HospitalRoles.Admin)] // ONLY Admin can void a financial record
+
+        [Authorize(Roles = HospitalRoles.Admin)] 
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
@@ -245,7 +253,7 @@ namespace HospitalManagement.Controllers
             return View(bill);
         }
 
-        // POST: Bills/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = HospitalRoles.Admin)]
