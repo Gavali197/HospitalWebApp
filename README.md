@@ -90,6 +90,8 @@ HospitalWebApp/
 └── HospitalManagement.sln
 ```
 
+---
+
 🔒 Security Features
 Strict RBAC (Role-Based Access Control): 7 distinct authority levels (Admin, Doctor, Nurse, Receptionist, Pharmacist, LabTechnician, Patient).
 
@@ -100,6 +102,8 @@ Data Isolation: Patient portal explicitly filters data by the authenticated user
 Anti-Forgery Tokens: Protection against Cross-Site Request Forgery (CSRF) on all state-changing operations.
 
 SQL Injection Protection: Enforced via Entity Framework Core LINQ queries.
+
+---
 
 
 🚀 Getting Started
@@ -147,8 +151,61 @@ Git
 
 (Note: The DbSeeder.cs will automatically populate the database with default admin/staff accounts and a test patient upon first run).
 
+--- 
 
 **📸 Screenshots**
 
+## 📸 Screenshots
+
+### Patient Self-Service Portal
+![Login Screen](Screenshot/Screenshot%202026-06-18%20014143.png)
 
 
+### Login & Dual-Auth Screen
+![Admin Dashboard](Screenshot/Screenshot%202026-06-21%20005154.png)
+
+### Admin Operational Dashboard
+![Doctor View](Screenshot/Screenshot%202026-06-21%20005213.png)
+
+### Admin Department Dashboard 
+![Patient Portal](Screenshot/Screenshot%202026-06-21%20005235.png)
+
+### Admin User Management
+![PDF Prescription](Screenshot/Screenshot%202026-06-21%20005253.png)
+
+### Additional System Views
+![System View 1](Screenshot/Screenshot%202026-06-21%20005318.png)
+
+![System View 2](Screenshot/Screenshot%202026-06-21%20005332.png)
+
+![System View 3](Screenshot/Screenshot%202026-06-21%20005354.png)
+
+![System View 4](Screenshot/Screenshot%202026-06-21%20005419.png)
+
+---
+
+🌟 Future Enhancements
+Telemedicine Video Integration
+
+Automated WhatsApp API Notifications
+
+Advanced Analytics & PowerBI Dashboard
+
+Cloud Deployment via Azure App Services
+
+Interactive Floor-plan for Bed Management
+
+---
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+Fork the repository
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
