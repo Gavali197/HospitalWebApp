@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|solutionrelative:hospitalmanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|c:\\users\\digit\\desktop\\exam\\msc ict 2\\projectc#\\hospitalwebapp\\hospitalmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|solutionrelative:hospitalmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|c:\\users\\digit\\desktop\\exam\\msc ict 2\\projectc#\\hospitalwebapp\\hospitalmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|solutionrelative:hospitalmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|c:\\users\\digit\\desktop\\exam\\msc ict 2\\projectc#\\hospitalwebapp\\hospitalmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|solutionrelative:hospitalmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|c:\\users\\digit\\desktop\\exam\\msc ict 2\\projectc#\\hospitalwebapp\\hospitalmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|solutionrelative:hospitalmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{53B8563C-362C-46B3-9217-5074F167AEB7}|HospitalManagement\\HospitalManagement.csproj|c:\\users\\digit\\desktop\\exam\\msc ict 2\\projectc#\\hospitalwebapp\\hospitalmanagement\\views\\bills\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -194,24 +194,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\digit\\Desktop\\Exam\\MSC ICT 2\\ProjectC#\\HospitalWebApp\\HospitalManagement\\appsettings.json",
-              "RelativeDocumentMoniker": "HospitalManagement\\appsettings.json",
-              "ToolTip": "C:\\Users\\digit\\Desktop\\Exam\\MSC ICT 2\\ProjectC#\\HospitalWebApp\\HospitalManagement\\appsettings.json",
-              "RelativeToolTip": "HospitalManagement\\appsettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-18T04:23:19.622Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -239,15 +226,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\digit\\Desktop\\Exam\\MSC ICT 2\\ProjectC#\\HospitalWebApp\\HospitalManagement\\Program.cs",
               "RelativeDocumentMoniker": "HospitalManagement\\Program.cs",
               "ToolTip": "C:\\Users\\digit\\Desktop\\Exam\\MSC ICT 2\\ProjectC#\\HospitalWebApp\\HospitalManagement\\Program.cs",
               "RelativeToolTip": "HospitalManagement\\Program.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAQwE0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T06:12:30.018Z"
+              "WhenOpened": "2026-06-15T06:12:30.018Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -257,7 +245,7 @@
               "RelativeDocumentMoniker": "HospitalManagement\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\digit\\Desktop\\Exam\\MSC ICT 2\\ProjectC#\\HospitalWebApp\\HospitalManagement\\Properties\\launchSettings.json",
               "RelativeToolTip": "HospitalManagement\\Properties\\launchSettings.json",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwCkAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACkAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-06-15T05:23:19.635Z",
               "EditorCaption": ""
@@ -265,6 +253,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\digit\\Desktop\\Exam\\MSC ICT 2\\ProjectC#\\HospitalWebApp\\HospitalManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "HospitalManagement\\appsettings.json",
+              "ToolTip": "C:\\Users\\digit\\Desktop\\Exam\\MSC ICT 2\\ProjectC#\\HospitalWebApp\\HospitalManagement\\appsettings.json",
+              "RelativeToolTip": "HospitalManagement\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-18T04:23:19.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\digit\\Desktop\\Exam\\MSC ICT 2\\ProjectC#\\HospitalWebApp\\HospitalManagement\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "HospitalManagement\\Views\\Home\\Index.cshtml",
