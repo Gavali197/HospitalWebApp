@@ -13,6 +13,7 @@ The Hospital Management System simplifies healthcare administration by providing
 
 ---
 
+
 ## 📑 Table of Contents
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
